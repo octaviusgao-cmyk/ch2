@@ -5,8 +5,10 @@ public class time {
 		int minute = 16;
 		int second = 41;
 		
+		
 		double current = hour*60*60 + minute*60 + second;
 		double total = 60*60*24;
+
 		
 		System.out.print(hour*60*60 + minute*60 + second);
 		System.out.println(" seconds passed from midnight");
@@ -16,5 +18,16 @@ public class time {
 		
 		System.out.print(current/total*100);
 		System.out.println(" percent done with the day");
+	
+		hour = 12;
+		minute = 31;
+		second = 15;
+		
+		double newcurrent = hour*60*60 + minute*60 + second;
+		
+		System.out.print(current - newcurrent);
+		System.out.println(" seconds since project started");
 	}
+	
 }
+
